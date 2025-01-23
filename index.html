@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets\css\style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h3>Melisa Annabella Messa Muñoz</h3>
+            <div>
+                <a href="#about-me">Sobre mi</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#projects">Proyectos</a>
+            </div>
+        </nav>
+    </header>
+    <section class="introduction">
+        <div class="introduction-container">
+            <div>
+                <img src="assets\img\logo_mm.png" alt="logo">
+            </div>
+            <h1>Hola, <span>soy Melisa</span></h1>
+            <h3>Desde desarrollar redes neuronales en Python hasta crear mundos virtuales interactivos con Unity, cada proyecto me permite explorar y expandir los límites de la tecnología.</h3>
+            <div class="contact">
+                <div class="copy-mail">
+                    <p id="email">messamelisa42@gmail.com</p>
+                    <button id="copy-button" onclick="CopyUrl()">
+                        <img src="assets\img\copy-button.png" alt="Copiar">
+                    </button>
+                </div>
+                <a href="assets\documents\CV_MelisaMessa.pdf" target="_blank">Ver curriculum</a>
+            </div>
+        </div>
+    </section>
+    <section id="about-me">
+        <div class="about-me-text">
+            <h2>Acerca de Melisa Messa</h2>
+            <p>Soy estudiante avanzada de Ingeniería de Sistemas y graduada como Analista Programador Universitario. A lo largo de mi carrera, he trabajado en diversos proyectos, desarrollando y mejorando tanto habilidades técnicas como blandas.
+                Aparte de mi pasión por la tecnología, practico boxeo, soy parte del grupo scout San Antonio de Padua y disfruto de la música tocando varios instrumentos. También me encanta leer y seguir aprendiendo.
+                Busco nuevas experiencias y oportunidades para seguir creciendo, aportar lo mejor de mí y obtener los mejores resultados.</p>
+        </div>
+        <div class="about-me-img">
+            <img src="assets\img\melisamessa.jpg" alt="">
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skills-container">
+            <div class="category">
+                <h3>Habilidades técnicas:</h3>
+                <div class="category-item-container">
+                    <div class="category-item">
+                        <img src="assets\img\c.png" alt="C#">
+                    </div>
+                    <div class="category-item">
+                        <img src="assets\img\python.png" alt="Python">
+                    </div>
+                    <div class="category-item">
+                        <img src="assets\img\java.png" alt="Unity">
+                    </div>
+                    <div class="category-item">
+                        <img src="assets\img\unity.png" alt="Logo MM">
+                    </div>
+                    <div class="category-item">
+                        <img src="assets\img\github.png" alt="Logo MM">
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h3>Habilidades blandas:</h3>
+                <div class="category-item-container">
+                    <div class="category-item">
+                        <!-- <img src="assets\img\teamwork.png" alt="Logo MM"> -->
+                         <p>Trabajo en equipo</p>
+                    </div>
+                    <div class="category-item">
+                        <!-- <img src="assets\img\problemsolving.png" alt="Logo MM"> -->
+                         <p>Resolución de problemas</p>
+                    </div>
+                    <div class="category-item">
+                        <!-- <img src="assets\img\leadership.png" alt="Logo MM"> -->
+                         <p>Liderazgo</p>
+                    </div>
+                    <div class="category-item">
+                        <!-- <img src="assets\img\empathy.png" alt="Logo MM"> -->
+                         <p>Empatía</p>
+                    </div>
+                    <div class="category-item">
+                        <p>Adaptabilidad</p>
+                        <!-- <img src="assets\img\adaptability.png" alt="Logo MM"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h3>Habilidades técnicas en progreso:</h3>
+                <div class="category-item-container">
+                    <div class="category-item">
+                        <img src="assets\img\android_studio.png" alt="C#">
+                    </div>
+                    <div class="category-item">
+                        <img src="assets\img\html.png" alt="Python">
+                    </div>
+                    <div class="category-item">
+                        <img src="assets\img\css.png" alt="Unity">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div>
+            <h2>Proyectos</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="assets\img\virtualcampus.png" alt="Project 1">
+                    <h3>Campus virtual</h3>
+                    <h5>2024</h5>
+                    <p>El proyecto Campus Virtual de NeolaSoft recrea digitalmente el campus universitario de la UNICEN 
+                        para que estudiantes y visitantes exploren sus instalaciones de forma interactiva y realista sin necesidad de 
+                        desplazarse físicamente. Combina modelado 3D en SketchUp con desarrollo en Unity, integrando funcionalidades 
+                        como mapas, teletransporte y multijugador.</p>
+                </div>
+                <div class="project-card">
+                    <img src="assets\img\cnn.png" alt="Project 2">
+                    <h3>Red convolucional de clasificación binaria para la detección de tumores cerebrales</h3>
+                    <h5>Septiembre, 2023</h5>
+                    <p>Proyecto individual donde se desarrolla una Red Neuronal Convolucional (CNN) para la detección automatizada de 
+                        tumores cerebrales en imágenes de resonancia magnética, clasificándolas como "Normales" o 
+                        "Anómalas". Utilizando técnicas avanzadas de preprocesamiento y aprendizaje profundo, la red 
+                        aprende a identificar características clave para diferenciar tejido cerebral sano del afectado. 
+                        Este enfoque busca apoyar el diagnóstico médico mediante resultados precisos y eficientes.</p>
+                </div>
+                <div class="project-card">
+                    <img src="assets\img\tsp.png" alt="Project 3">
+                    <h3>Diseño de Algoritmo Evolutivo para la Resolución del Problema del Viajante</h3>
+                    <h5>Septiembre 2024</h5>
+                    <p>Proyecto individual que se centra en el diseño e implementación de un Algoritmo Evolutivo para 
+                        resolver el Problema del Viajante (TSP), un problema de optimización NP-Hard. 
+                        A través de técnicas como selección por torneo, operadores de cruce y mutación, y estrategias 
+                        de selección de sobrevivientes, se busca encontrar rutas de menor costo entre ciudades. 
+                        El objetivo es demostrar la eficacia de los Algoritmos Evolutivos aplicados a problemas complejos.</p>
+                </div>
+            </div>
+            <button>Más proyectos</button>
+        </div>
+    </section>
+    <script src="assets\js\script.js"></script>
+</body>
+</html>

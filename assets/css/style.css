@@ -1,0 +1,520 @@
+body{
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #fefaf3;
+    color: #4a2f22;
+}
+
+header{
+    background-color: #9b4819;
+    padding: 0.5rem 0;
+    color: #fefaf3;
+    width: 100%;
+
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header nav a{
+    color: #f4f1e8;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+/*
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.introduction{
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.introduction-container img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.introduction-container h1{
+    margin-top: 70px;
+    font-size: 64px;
+    color: #000;
+}
+
+.introduction-container span{
+    color: #9b4819;
+    font-style: italic;
+}
+
+.introduction-container h3{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.contact a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #9b4819;
+}
+
+.copy-mail {
+    display: flex;
+}
+
+.copy-mail p {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #9b4819;
+}
+
+.copy-mail button{
+    width: 35px;
+    height: 25px;
+    align-items: center;
+    border: none;
+    background-color: #fefaf3;
+}
+
+.copy-mail img{
+    width: 20px;
+    height: 20px;
+}
+
+.copy-mail button::before{
+    content: "Copiado";
+    position: absolute;
+    top: -35px;
+    background-color: #f4f1e8;
+    padding: 8px 10px;
+    border-radius: 20px;
+    display: none;
+}
+
+.copy-mail.active button::before{
+    display: block;
+}
+  
+.contact a:hover {
+    text-decoration: underline;
+}
+*/
+section {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.introduction {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* Cambio de altura para evitar problemas en dispositivos pequeños */
+    min-height: 100vh; /* Garantiza que ocupe toda la altura en pantallas grandes */
+}
+
+.introduction-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.introduction-container h1 {
+    margin-top: 70px;
+    font-size: 64px;
+    color: #000;
+}
+
+.introduction-container span {
+    color: #9b4819;
+    font-style: italic;
+}
+
+.introduction-container h3 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px; /* Tamaño adaptable */
+    line-height: 1.5;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    position: relative; /* Cambiado para mejorar en pantallas pequeñas */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite apilar elementos en pantallas pequeñas */
+}
+
+.contact a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #9b4819;
+}
+
+.copy-mail {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrado en pantallas pequeñas */
+    gap: 10px;
+}
+
+.copy-mail p {
+    margin: 0;
+    font-size: 16px;
+    color: #9b4819;
+}
+
+.copy-mail button {
+    width: 35px;
+    height: 25px;
+    align-items: center;
+    border: none;
+    background-color: #fefaf3;
+}
+
+.copy-mail img {
+    width: 20px;
+    height: 20px;
+}
+
+.copy-mail button::before {
+    content: "Copiado";
+    position: absolute;
+    top: -35px;
+    background-color: #f4f1e8;
+    padding: 8px 10px;
+    border-radius: 20px;
+    display: none;
+}
+
+.copy-mail.active button::before {
+    display: block;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustado */
+#about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9b4819;
+    padding: 50px 10%; /* Espaciado inicial */
+    color: #fff;
+}
+
+.about-me-text {
+    max-width: 50%; /* Proporción inicial */
+}
+
+.about-me-text h2 {
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.about-me-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-me-img {
+    max-width: 40%;
+    position: relative;
+}
+
+.about-me-img img {
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*#about-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9b4819;
+    padding: 50px 10%;
+    color: #fff;
+}
+
+.about-me-text{
+    max-width: 50%;
+}
+
+.about-me-text h2{
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.about-me-text p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-me-img {
+    max-width: 40%;
+    position: relative;
+}
+  
+.about-me-img img {
+    width: 100%;
+    border-radius: 5% 5% 5% 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}*/
+
+/*Ajustado*/
+
+#skills {
+    text-align: center;
+    padding: 20px; /* Ajuste de padding para manejar espacios */
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.category {
+    max-width: 800px;
+    text-align: center;
+    padding: 10px; /* Espaciado adicional */
+}
+
+.category h3 {
+    color: #9b4819;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.category-item-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite reorganizar elementos */
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-item {
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 80px; /* Limita el tamaño en pantallas pequeñas */
+    max-height: 60px;
+}
+
+.category-item p {
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 0 10px;
+    font-size: 14px; /* Tamaño de texto reducido */
+}
+
+/*
+#skills {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.category {
+    max-width: 800px;
+    text-align: center;
+}
+
+.category h3 {
+    color: #9b4819;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.category-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-item {
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.category-item p{
+    font-weight: bold;
+    margin: 0 20px;
+    padding: 0 20px;
+}*/
+
+/* Ajustado */
+#projects {
+    margin: 0;
+    background-color: #9b4819;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem; /* Añadido padding */
+}
+
+#projects h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem; /* Tamaño más flexible */
+}
+
+#projects .project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem; /* Espacio entre tarjetas */
+    padding: 1rem;
+}
+
+.project-card {
+    min-width: 250px; /* Tamaño mínimo definido */
+    max-width: 300px; /* Tamaño máximo definido */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #f4f1e7;
+    color: black;
+    flex-shrink: 0;
+    text-align: center; /* Centrar contenido */
+}
+
+.project-card h3 {
+    margin: 5px;
+    font-size: 1.2rem; /* Escalable */
+}
+
+.project-card h5 {
+    margin: 5px;
+    font-size: 1rem; /* Escalable */
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Imagen se ajusta al contenedor */
+}
+
+
+/*#projects {
+    margin: 0;
+    background-color: #9b4819;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects h2 {
+    margin-bottom: 2rem;
+    justify-content: start;
+    text-align: center;
+    color: #fff;
+}
+
+#projects .project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.project-card {
+    min-width: 10%;
+    max-width: 25%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #f4f1e7;
+    color: black;
+    flex-shrink: 0;
+}
+
+.project-card h3{
+    margin: 5px;
+}
+
+.project-card h5{
+    margin: 5px;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+    */
