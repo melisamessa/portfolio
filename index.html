@@ -10,28 +10,30 @@
     <header>
         <nav>
             <h3>Melisa Annabella Messa Muñoz</h3>
-            <div>
+            <!-- <div>
                 <a href="#about-me">Sobre mi</a>
                 <a href="#skills">Habilidades</a>
                 <a href="#projects">Proyectos</a>
-            </div>
+            </div> -->
         </nav>
     </header>
-    <section class="introduction">
+    <section id="introduction-section" class="introduction">
         <div class="introduction-container">
             <div>
-                <img src="assets\img\logo_mm.png" alt="logo">
+                <img src="assets\img\melisamessa2.jpg" alt="logo">
             </div>
             <h1>Hola, <span>soy Melisa</span></h1>
             <h3>Desde desarrollar redes neuronales en Python hasta crear mundos virtuales interactivos con Unity, cada proyecto me permite explorar y expandir los límites de la tecnología.</h3>
             <div class="contact">
+                <p>Tandil, Buenos Aires, Argentina</p>
                 <div class="copy-mail">
                     <p id="email">messamelisa42@gmail.com</p>
                     <button id="copy-button" onclick="CopyUrl()">
                         <img src="assets\img\copy-button.png" alt="Copiar">
                     </button>
                 </div>
-                <a href="assets\documents\CV_MelisaMessa.pdf" target="_blank">Ver curriculum</a>
+                <a href="https://www.linkedin.com/in/melisa-messa" target="_blank">LinkedIn</a>
+                <a href="assets\documents\MelisaMessa_CV.pdf" target="_blank">Ver curriculum</a>
             </div>
         </div>
     </section>
@@ -58,13 +60,16 @@
                         <img src="assets\img\python.png" alt="Python">
                     </div>
                     <div class="category-item">
-                        <img src="assets\img\java.png" alt="Unity">
+                        <img src="assets\img\java.png" alt="Java">
                     </div>
                     <div class="category-item">
-                        <img src="assets\img\unity.png" alt="Logo MM">
+                        <img src="assets\img\unity.png" alt="Unity">
                     </div>
                     <div class="category-item">
-                        <img src="assets\img\github.png" alt="Logo MM">
+                        <img src="assets\img\sql.png" alt="SQL">
+                    </div>
+                    <div class="category-item">
+                        <img src="assets\img\github.png" alt="GitHub">
                     </div>
                 </div>
             </div>
@@ -119,8 +124,14 @@
                     <h5>2024</h5>
                     <p>El proyecto Campus Virtual de NeolaSoft recrea digitalmente el campus universitario de la UNICEN 
                         para que estudiantes y visitantes exploren sus instalaciones de forma interactiva y realista sin necesidad de 
-                        desplazarse físicamente. Combina modelado 3D en SketchUp con desarrollo en Unity, integrando funcionalidades 
-                        como mapas, teletransporte y multijugador.</p>
+                        desplazarse físicamente.</p>
+                        <p style="font-size: 11px;">NeolaSoft: Ignacio Ramiro Ciano, Agustín D'Onofrio, Joaquín Ignacio Frati, Franco Len, Melisa Messa, Nicolas Miccio Palermo, Alejandro Moran, Matías Nicolás Pozzi.</p>
+                    <div class="buttons">
+                        <a href="https://drive.google.com/file/d/1QAnHQtfsbX6aYjdsSaAZFn5BxozAfxGo/view?usp=drive_link" target="_blank">Primera demo</a>
+                        <a href="https://drive.google.com/file/d/1GIe3r82g_VzliVwxJ8g2LCD2eeWH4is2/view?usp=drive_link" target="_blank">Segunda demo</a>
+                        <!-- <a href="" target="_blank">GitHub</a> -->
+                        <!-- <a href="#">Más Info</a> -->
+                    </div>
                 </div>
                 <div class="project-card">
                     <img src="assets\img\cnn.png" alt="Project 2">
@@ -129,8 +140,12 @@
                     <p>Proyecto individual donde se desarrolla una Red Neuronal Convolucional (CNN) para la detección automatizada de 
                         tumores cerebrales en imágenes de resonancia magnética, clasificándolas como "Normales" o 
                         "Anómalas". Utilizando técnicas avanzadas de preprocesamiento y aprendizaje profundo, la red 
-                        aprende a identificar características clave para diferenciar tejido cerebral sano del afectado. 
-                        Este enfoque busca apoyar el diagnóstico médico mediante resultados precisos y eficientes.</p>
+                        es capaz de diferenciar tejido cerebral sano del afectado.
+                    </p>
+                    <div class="buttons">
+                        <a href="https://github.com/melisamessa/CNN_BrainTumorDetection" target="_blank">GitHub</a>
+                        <!-- <a href="#">Más Info</a> -->
+                    </div>
                 </div>
                 <div class="project-card">
                     <img src="assets\img\tsp.png" alt="Project 3">
@@ -140,12 +155,34 @@
                         resolver el Problema del Viajante (TSP), un problema de optimización NP-Hard. 
                         A través de técnicas como selección por torneo, operadores de cruce y mutación, y estrategias 
                         de selección de sobrevivientes, se busca encontrar rutas de menor costo entre ciudades. 
-                        El objetivo es demostrar la eficacia de los Algoritmos Evolutivos aplicados a problemas complejos.</p>
+                    </p>
+                    <div class="buttons">
+                        <a href="https://github.com/melisamessa/tsp_algoritmo_evolutivo" target="_blank">GitHub</a>
+                        <!-- <a href="#">Más Info</a> -->
+                    </div>
                 </div>
             </div>
-            <button>Más proyectos</button>
+            <button onclick="window.location.href='projects_galery.html';">Más proyectos</button>
         </div>
     </section>
+    <footer>
+        <div class="footer-content">
+          <p>&copy; 2025 Melisa Annabella Messa Muñoz</p>
+          <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/melisa-messa" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/melisamessa" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#introduction-section">Introducción</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+          </ul>
+        </nav>
+      </footer>
+      
     <script src="assets\js\script.js"></script>
 </body>
 </html>
