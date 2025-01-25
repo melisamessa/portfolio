@@ -44,14 +44,13 @@ section {
     padding: 50px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: auto;
-    min-height: 100vh;
 }
 
 .introduction-container img {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -172,6 +171,39 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 600px) {
+    #about-me {
+        flex-direction: column;
+        padding: 30px 5%;
+        text-align: center;
+    }
+
+    .about-me-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-me-text h2 {
+        font-size: 24px;
+    }
+
+    .about-me-text p {
+        font-size: 16px;
+    }
+
+    .about-me-img {
+        max-width: 100%;
+    }
+
+    .about-me-img img {
+        border-radius: 10%;
+        max-width: 80%;
+        height: auto;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+}
+
 /*Skills Section*/
 
 #skills {
@@ -284,7 +316,7 @@ section {
     border-radius: 8px;
     padding: 1rem;
     background: #f4f1e7;
-    color: black;
+    color: #000;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -328,7 +360,7 @@ section {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: bold;
-    color: white;
+    color: #fff;
     background-color: #9b4819;
     padding: 10px 15px;
     border-radius: 5px;
@@ -337,6 +369,24 @@ section {
 
 .project-card .buttons a:hover {
     background-color: #7a3a16;
+}
+
+@media (min-width: 300px) and (max-width: 400px) and (min-height: 600px) {
+    .project-card {
+        padding: 1rem 0.5rem;
+        height: auto;
+    }
+
+    .project-card .buttons {
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .project-card .buttons a {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 /* FOOOTER SECTION */
@@ -362,7 +412,7 @@ footer {
   }
   
   .social-links a {
-    color: white;
+    color: #fff;
     text-decoration: none;
   }
   
@@ -375,7 +425,7 @@ footer {
   }
   
   .footer-nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
   }
   
