@@ -34,7 +34,8 @@ section{
 .project-card {
     min-width: 250px;
     max-width: 300px;
-    height: 550px;
+    min-height: 550px;
+    max-height: 700px;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1rem;
@@ -74,6 +75,7 @@ section{
 
 .project-card .buttons {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     gap: 10px;
     margin-top: 1rem;
