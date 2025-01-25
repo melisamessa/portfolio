@@ -94,51 +94,50 @@ section{
     background-color: #7a3a16;
 }
 
-@media (max-width: 400px) and (min-height: 600px) and (max-height: 900px) {
+@media (max-width: 400px) and (max-height: 900px) {
     .container-projects {
-        flex-direction: column; /* Apila las cards verticalmente */
-        gap: 1.5rem; /* Reducir el espacio entre las cards */
-        align-items: center; /* Centra las cards */
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
     }
 
     .project-card {
-        min-width: 90%; /* Asegura que las cards ocupen el 90% del ancho de la pantalla */
-        max-width: none; /* Sin límite máximo */
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        padding: 0.8rem; /* Reduce el padding interno */
-        box-shadow: none; /* Reduce sombras para mayor claridad en pantallas pequeñas */
+        min-width: 90%;
+        max-width: none;
+        height: auto;
+        padding: 0.8rem;
+        box-shadow: none;
     }
 
     .project-card img {
-        height: 150px; /* Ajusta el tamaño de las imágenes */
+        height: 150px;
         border-radius: 6px;
     }
 
     .project-card h3 {
-        font-size: 0.9rem; /* Reduce el tamaño del título */
+        font-size: 0.9rem;
     }
 
     .project-card h5 {
-        font-size: 0.8rem; /* Reduce el subtítulo */
+        font-size: 0.8rem;
     }
 
     .project-card p {
-        font-size: 0.8rem; /* Reduce el tamaño del texto */
-        line-height: 1.2; /* Ajusta el interlineado */
-        margin: 5px 0; /* Reduce el espacio entre párrafos */
+        font-size: 0.8rem;
+        line-height: 1.2;
+        margin: 5px 0;
     }
 
     .project-card .buttons {
-        flex-direction: column; /* Coloca los botones en una columna */
-        gap: 0.5rem; /* Reduce el espacio entre los botones */
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
     .project-card .buttons a {
-        font-size: 0.8rem; /* Reduce el tamaño del texto en los botones */
-        padding: 8px 12px; /* Reduce el padding de los botones */
+        font-size: 0.8rem;
+        padding: 8px 12px;
     }
 }
-
 /* More info section */
 
 .more-info-project {
@@ -147,7 +146,7 @@ section{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
