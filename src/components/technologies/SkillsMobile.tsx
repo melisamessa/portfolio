@@ -4,11 +4,16 @@ import {
   VStack,
   Text,
   useBreakpointValue,
+  HStack,
 } from "@chakra-ui/react";
 import { skills } from "../../data/Skills";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
+import { useState } from "react";
 
 const SkillsMobileSection = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
+  const [openCategory, setOpenCategory] = useState<String | null>(null);
 
   if (!isMobile) {
     return null;
@@ -18,15 +23,27 @@ const SkillsMobileSection = () => {
     <Accordion.Root collapsible>
       {skills.map((item, index) => (
         <Accordion.Item key={index} value={item.category}>
-          <Accordion.ItemTrigger>
-            <Text
-              textStyle={"subtitle"}
-              color={"brand.subtitle"}
-              fontSize={["sm", "md", "lg"]}
-            >
-              {item.category}
-            </Text>
-            <Accordion.ItemIndicator />
+          <Accordion.ItemTrigger
+            onClick={() =>
+              setOpenCategory(
+                openCategory === item.category ? null : item.category
+              )
+            }
+          >
+            <HStack justifyContent="space-between" width="100%">
+              <Text
+                textStyle={"subtitle"}
+                color={"brand.subtitle"}
+                fontSize={["sm", "md", "lg"]}
+              >
+                {item.category}
+              </Text>
+              {openCategory === item.category ? (
+                <IoIosArrowUp />
+              ) : (
+                <IoIosArrowDown />
+              )}
+            </HStack>
           </Accordion.ItemTrigger>
           <Accordion.ItemContent>
             {item.items.map((s, i) => (
