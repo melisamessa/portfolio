@@ -42,17 +42,11 @@ const Project = () => {
               <Heading size="md" color={"brand.subtitle"}>
                 {project.name}
               </Heading>
-              {project.github ? (
+              {project.github && (
                 <Tooltip content="Ver repositorio">
-                  <Link href={project.github} target="_blank">
-                    <FaGithub size={25} color="#fff" />
+                  <Link href={project.github} target="_blank" px={"2px"}>
+                    <FaGithub size={25} color={"#fff"} />
                   </Link>
-                </Tooltip>
-              ) : (
-                <Tooltip content="Repositorio privado: solicitar codigo por mail">
-                  <Box cursor="pointer">
-                    <FaGithub size={25} color="#fff" />
-                  </Box>
                 </Tooltip>
               )}
             </Flex>
