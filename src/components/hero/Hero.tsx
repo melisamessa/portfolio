@@ -97,7 +97,7 @@ const Hero = () => {
           p={"20px"}
         >
           <Image
-            src={"/images/melisamessa1.jpg"}
+            src={"/images/melisamessa2.JPG"}
             w={{ base: "150px", md: "200px" }}
             h={{ base: "150px", md: "200px" }}
             borderRadius={"full"}

@@ -17,12 +17,15 @@ import {
   SiRasa,
   SiNumpy,
   SiPandas,
+  SiTypescript,
 } from "react-icons/si";
 import { GiLadybug } from "react-icons/gi";
 import { BsKanban } from "react-icons/bs";
 import { DiScrum } from "react-icons/di";
 import { PiFileCSharp, PiFileSqlFill } from "react-icons/pi";
 import { CgCPlusPlus } from "react-icons/cg";
+import { RiSupabaseFill } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io";
 
 export const skills = [
   {
@@ -34,6 +37,18 @@ export const skills = [
       { id: "Cpp", name: "C++", icon: CgCPlusPlus, level: "Intermedio" },
       { id: "HTML", name: "HTML", icon: FaHtml5, level: "Básico" },
       { id: "CSS", name: "CSS", icon: FaCss3, level: "Básico" },
+      {
+        id: "JavaScript",
+        name: "JavaScript",
+        icon: IoLogoJavascript,
+        level: "Básico",
+      },
+      {
+        id: "TypeScript",
+        name: "TypeScript",
+        icon: SiTypescript,
+        level: "Básico",
+      },
     ],
   },
   {
@@ -60,6 +75,12 @@ export const skills = [
         level: "Básico",
       },
       { id: "SQL", name: "SQL", icon: PiFileSqlFill, level: "Básico" },
+      {
+        id: "Supabase",
+        name: "Supabase",
+        icon: RiSupabaseFill,
+        level: "Básico",
+      },
     ],
   },
   {

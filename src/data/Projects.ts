@@ -8,28 +8,41 @@ export const projects = [
     technologies: ["Unity", "C#", "SketchUp"],
   },
   {
+    id: 12,
+    name: "Aplicación Web para Evaluación Cognitiva",
+    description:
+      "Desarrollo de una aplicación web administrativa para la gestión de una aplicación móvil de evaluación cognitiva. Permite administrar usuarios, personalizar niveles del juego, visualizar entornos virtuales y analizar resultados cognitivos, con integración completa a Firebase. Proyecto académico desarrollado como parte de un sistema de evaluación cognitiva en entornos de realidad virtual.",
+    github: null,
+    technologies: [
+      "Vue.js",
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "Firebase Realtime Database",
+      "Firebase Authentication",
+    ],
+  },
+  {
+    id: 11,
+    name: "AI Learning Assistant Dashboard",
+    description:
+      "Dashboard web para acompañar procesos de estudio mediante un asistente basado en LLM. Permite mantener conversaciones contextuales, generar y guardar resúmenes y planes de acción, reutilizar conocimiento generado por IA y exportar contenido a PDF. Proyecto orientado a explorar la integración práctica de modelos de lenguaje en una aplicación web real.",
+    github: "https://github.com/melisamessa/AILearningDashboard",
+    technologies: [
+      "Next.js",
+      "React",
+      "Zustand",
+      "LLM (Cohere)",
+      "JavaScript/TypeScript",
+    ],
+  },
+  {
     id: 2,
     name: "Campus virtual",
     description:
       "Recreación digital 3D de la UNICEN de Tandil con navegación interactiva y modo multijugador. Trabajo en equipo desarrollado por Neolasoft.",
     github: null,
     technologies: ["Unity", "C#", "SketchUp", "Photon", "Git"],
-  },
-  {
-    id: 3,
-    name: "Task Manager",
-    description:
-      "Aplicación para gestionar tareas y proyectos. Proyecto propio actualmente en desarrollo.",
-    github: "https://github.com/melisamessa/task_manager",
-    technologies: [
-      "React",
-      "TypeScript",
-      "Chakra UI",
-      "SpringBoot",
-      "Java",
-      "JWT",
-      "PostgreSQL",
-    ],
   },
   {
     id: 4,
@@ -71,6 +84,22 @@ export const projects = [
       "Trabajo desarrollado por Amaiké Gopar y Melisa Messa, donde se implementaron tres chatbots para gestionar alumnos en distintas materias. Sus funciones eran: registrar el desempeño estudiantil, responder dudas y administrar la entrega de tareas. Además, dos chatbots se podían comunicar entre sí para decidir extensiones de plazos.",
     github: "https://github.com/melisamessa/rasa_chatbots",
     technologies: ["Rasa", "Python", "JSON"],
+  },
+  {
+    id: 3,
+    name: "Task Manager",
+    description:
+      "Aplicación para gestionar tareas y proyectos. Proyecto propio actualmente en desarrollo.",
+    github: "https://github.com/melisamessa/task_manager",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Chakra UI",
+      "SpringBoot",
+      "Java",
+      "JWT",
+      "PostgreSQL",
+    ],
   },
   {
     id: 8,

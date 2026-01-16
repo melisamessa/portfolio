@@ -23,6 +23,11 @@ const Navbar = () => {
         </Link>
       </Box>
       <Box mx="4">
+        <Link href="#work" color="white" fontWeight="bold">
+          Emprendimiento
+        </Link>
+      </Box>
+      <Box mx="4">
         <Link href="#projects" color="white" fontWeight="bold">
           Proyectos
         </Link>
